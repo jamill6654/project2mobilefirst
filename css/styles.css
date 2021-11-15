@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-heading {
+  margin-bottom: 50px;
+}
+
+.main-portfolio {
+  margin: 10%;
+}
+
+#main-profile {
+  margin: 40px auto;
+  max-width: 300px;
+}
+
+.top-section {
+  padding: 20px 0px 20px;
+  background-color: rgba(248, 248, 248);
+}
+
+.main-nav li {
+  list-style-type: none;
+  background-color: white;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.main-footer {
+  display: none;
+}
+
+.footer-list {
+  padding: 0;
+}
+.footer-list li {
+  display: inline-block;
+  list-style-type: none;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+.footer-list li:first-child {
+  margin-left: 0;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-list a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.mobile-footer {
+  background-color: rgba(248, 248, 248);
+  padding: 5%;
+  padding-top: 50px;
+}
+
+.footer-text {
+  padding-bottom: 10%;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+}
