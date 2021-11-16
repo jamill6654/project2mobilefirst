@@ -1,20 +1,19 @@
 * {
   padding: 0px;
 }
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: white;
-  max-width: 350px;
+  background-color: rgba(248, 248, 248);
   margin: 0 auto;
   text-align: center;
 }
 
 .portfolio-heading {
-  margin-bottom: 50px;
-}
-
-.main-portfolio {
-  margin: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  background: white;
 }
 
 #main-profile {
@@ -25,6 +24,9 @@ body {
 .top-section {
   padding: 20px 0px 20px;
   background-color: rgba(248, 248, 248);
+  max-width: 320px;
+  margin: 0 auto;
+  font-size: 17px;
 }
 
 .main-nav li {
@@ -38,8 +40,31 @@ body {
   text-decoration: none;
 }
 
+.main-portfolio {
+  background: white;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.main-portfolio p {
+  width: 80vw;
+  margin: 20px auto;
+}
+
 .main-footer {
   display: none;
+}
+
+.skills {
+  background: rgb(171, 223, 223);
+  padding: 2rem;
+}
+.skills li {
+  list-style: none;
+  font-weight: 700;
+}
+.skills p {
+  font-size: 18px;
 }
 
 .footer-list {
@@ -61,11 +86,6 @@ body {
   color: black;
 }
 
-.footer-list a:hover {
-  text-decoration: none;
-  color: blue;
-}
-
 .mobile-footer {
   background-color: rgba(248, 248, 248);
   padding: 5%;
@@ -81,13 +101,17 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: blue;
+}
+
 @media (min-width: 768px) {
-  body {
-    max-width: 800px;
-  }
   .main-portfolio {
     display: flex;
     flex-wrap: wrap;
+  }
+  .main-portfolio p {
+    width: 300px;
   }
   .project {
     flex: 50%;
@@ -162,16 +186,9 @@ a {
   .foot-wrap h3 {
     margin-left: 20px;
   }
-  .portfolio-heading {
-    padding-top: 30px;
-  }
 }
 
 @media (min-width: 1024px) {
-  body {
-    max-width: 1200px;
-    background-color: rgba(248, 248, 248);
-  }
   .project {
     flex: 33.3%;
     max-width: 33.3%;
@@ -182,10 +199,6 @@ a {
   }
   .top-section {
     max-width: 1000px;
-  }
-  .main-portfolio {
-    background-color: white;
-    padding: 1rem;
   }
   .main-header {
     display: flex;
