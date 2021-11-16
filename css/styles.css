@@ -78,6 +78,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  body {
+    max-width: 800px;
+  }
   .main-portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +89,108 @@ body {
     flex: 50%;
     max-width: 50%;
   }
+  .profile-picture {
+    order: 2;
+  }
+  .profile-para {
+    order: 1;
+  }
+  #main-profile {
+    display: flex;
+    max-width: 650px;
+  }
+  .top-section {
+    max-width: 700px;
+    margin: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+  }
+  .top-section p {
+    text-align: left;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .main-nav li {
+    list-style-type: none;
+    background-color: rgba(248, 248, 248);
+    font-weight: 700;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+  }
+  .profile-picture {
+    width: 300px;
+    margin-left: 20px;
+  }
+  .mobile-footer {
+    display: none;
+  }
+  .main-footer {
+    display: inline-block;
+  }
+  .main-footer {
+    background-color: rgba(248, 248, 248);
+    min-width: 700px;
+    padding-top: 20px;
+  }
+  .main-footer p {
+    font-size: 16px;
+  }
+  .foot-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-foot-list {
+    display: flex;
+  }
+  .main-foot-list li {
+    list-style-type: none;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footer-text {
+    margin: 0 auto;
+    width: 500px;
+    padding-top: 20px;
+  }
+  .foot-wrap h3 {
+    margin-left: 20px;
+  }
+  .portfolio-heading {
+    padding-top: 30px;
+  }
 }
 
 @media (min-width: 1024px) {
+  body {
+    max-width: 1200px;
+    background-color: rgba(248, 248, 248);
+  }
+  .project {
+    flex: 33.3%;
+    max-width: 33.3%;
+  }
+  #main-profile {
+    display: flex;
+    max-width: 1200px;
+  }
+  .top-section {
+    max-width: 1000px;
+  }
+  .main-portfolio {
+    background-color: white;
+    padding: 1rem;
+  }
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-footer {
+    min-width: 1000px;
+  }
+  #main-profile p {
+    font-size: 20px;
+  }
 }
